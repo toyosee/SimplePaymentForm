@@ -1,0 +1,106 @@
+body {
+    background: #e4daf1;
+}
+
+.parent {
+    max-width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 768px) {
+    .parent {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.button {
+    background: #624E88;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background: #e4daf1;
+    color: #624E88;
+}
+
+.button-cancel {
+    border:1px solid #624E88;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.button-cancel:hover {
+    background: #624E88;
+    color: white;
+}
+
+.child1 {
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    background: #624E88;
+}
+
+.child1-h3 {
+    color: #e4daf1;
+}
+
+.child2 {
+    border-radius: 0 0 10px 10px;
+    padding: 30px 20px;
+    background: #ab86d9;
+    color: #624E88;
+}
+
+@media (min-width: 768px) {
+    .child1 {
+        border-radius: 10px 0 0 10px;
+        border-right: .5px dashed #8967B3;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .child2 {
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.input-group-text {
+    background-color: #ab86d9;
+    border: none;
+    color: white;
+}
+
+.input-group .form-control {
+    border-left: none;
+}
+
+@media (min-width: 768px) {
+    .form-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-group .input-group {
+        width: 100%;
+    }
+}
+
+/* Icon-specific styles */
+.input-group-text i {
+    color: #e4daf1;
+}
+
